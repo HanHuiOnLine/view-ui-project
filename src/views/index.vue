@@ -1,53 +1,89 @@
-<style scoped lang="less">
-    .index{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        text-align: center;
-        h1{
-            height: 150px;
-            img{
-                height: 100%;
-            }
-        }
-        h2{
-            color: #666;
-            margin-bottom: 200px;
-            p{
-                margin: 0 0 50px;
-            }
-        }
-        .ivu-row-flex{
-            height: 100%;
-        }
-    }
+<style scoped>
+.layout {
+	border: 1px solid #d7dde4;
+	background: #f5f7f9;
+	position: relative;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.layout-logo {
+	width: 100px;
+	height: 30px;
+	background: #5b6270;
+	border-radius: 3px;
+	float: left;
+	position: relative;
+	top: 15px;
+	left: 20px;
+}
+.layout-nav {
+	width: 420px;
+	margin: 0 auto;
+	margin-right: 20px;
+}
+.layout-footer-center {
+	text-align: center;
+}
+.content-view-div{
+	min-height: 700px;
+}
 </style>
 <template>
-    <div class="index">
-        <Row type="flex" justify="center" align="middle">
-            <Col span="24">
-                <h1>
-                    <img src="../images/logo.png">
-                </h1>
-                <h2>
-                    <p>Welcome to your View UI app!</p>
-                    <Button @click="handleStart">Start View UI</Button>
-                </h2>
-            </Col>
-        </Row>
-    </div>
+	<div class="layout">
+		<Layout>
+			<Header style="{height: 60px; background: #2d8cf0;}">
+				<Menu mode="horizontal" :theme="theme1" active-name="1">
+					<MenuItem name="1">
+						<Icon type="ios-paper" />
+						首页
+					</MenuItem>
+					<MenuItem name="2">
+						<Icon type="ios-people" />
+						用户管理
+					</MenuItem>
+					<Submenu name="3">
+						<template slot="title">
+							<Icon type="ios-stats" />
+							统计分析
+						</template>
+						<MenuGroup title="使用">
+							<MenuItem name="3-1">新增和启动</MenuItem>
+							<MenuItem name="3-2">活跃分析</MenuItem>
+							<MenuItem name="3-3">时段分析</MenuItem>
+						</MenuGroup>
+						<MenuGroup title="留存">
+							<MenuItem name="3-4">用户留存</MenuItem>
+							<MenuItem name="3-5">流失用户</MenuItem>
+						</MenuGroup>
+					</Submenu>
+					<MenuItem name="4" to="/timeLine">
+						<Icon type="ios-construct" />
+						版本更新
+					</MenuItem>
+				</Menu>
+			</Header>
+			<Content :style="{ padding: '0 50px' }">
+				<Breadcrumb :style="{ margin: '20px 0' }">
+					<BreadcrumbItem>首页</BreadcrumbItem>
+					<BreadcrumbItem>Components</BreadcrumbItem>
+					<BreadcrumbItem>Layout</BreadcrumbItem>
+				</Breadcrumb>
+				<Card>
+					<div class="content-view-div">
+						<router-view></router-view>
+					</div>
+				</Card>
+			</Content>
+			<Footer class="layout-footer-center">2016-2020 &copy; TalkingData</Footer>
+		</Layout>
+	</div>
 </template>
 <script>
-    export default {
-        methods: {
-            handleStart () {
-                this.$Modal.info({
-                    title: 'Bravo',
-                    content: 'Now, enjoy the convenience of View UI.'
-                });
-            }
-        }
-    }
+export default {
+	data() {
+		return {
+			theme1: 'primary'
+		};
+	}
+};
 </script>
