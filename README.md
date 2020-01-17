@@ -1,6 +1,6 @@
-# view-ui-project
+# inner website
 
-This project is build for Vue.js 2 + vue-router + webpack2 + View UI (iView) 4, just install and run.
+使用 Vue.js 2 + vue-router + webpack2 + View UI (iView) 4构建
 
 ## Install
 ```bush
