@@ -33,7 +33,7 @@
 		<Layout>
 			<Header style="{height: 60px; background: #2d8cf0;}">
 				<Menu mode="horizontal" :theme="theme1" active-name="1">
-					<MenuItem name="1">
+					<MenuItem name="1" to="/index2">
 						<Icon type="ios-paper" />
 						首页
 					</MenuItem>

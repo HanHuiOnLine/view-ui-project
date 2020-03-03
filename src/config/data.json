@@ -1,0 +1,164 @@
+[
+	{
+		title: 'AchievementUI(成就系统)',
+	},
+	{
+		title: 'ActivityUI(活动文件夹)',
+		children: [
+			title: 'ActiVityDT(活动跳转面板)'
+		]
+	},
+	{
+		title: 'AmenityTipsUI(快速换装备)'
+	},
+	{
+		title: 'ArenaUI(竞技场,仙道会,王者争霸)'
+	},
+	{
+		title: 'BagUI(背包)'
+	},
+	{
+		title: 'BossUI(首领)'
+	},
+	{
+		title: 'ChatUI(聊天)'
+	},
+	{
+		title: 'DaNianUI(打年)'
+	},
+	{
+		title: 'DailyTaskUI(日常任务系统)'
+	},
+	{
+		title: 'Devil(魔灵)'
+	},
+	{
+		title: 'DivineSoulUI(圣魂)'
+	},
+	{
+		title: 'EquipDevUI(装备)'
+	},
+	{
+		title: 'EquipShopUI(装备商店)'
+	},
+	{
+		title: 'FightUI(boss来袭)'
+	},
+	{
+		title: 'FriendUI(好友)'
+	},
+	{
+		title: 'FuBenUI(副本)'
+	},
+	{
+		title: 'Gang(帮会)'
+	},
+	{
+		title: 'Grade(进阶)'
+	},
+	{
+		title: 'Guide(新手引导)'
+	},
+	{
+		title: 'ImperialUI(科举比赛)'
+	},
+	{
+		title: 'InitRoleInfo(角色信息)'
+	},
+	{
+		title: 'JinJieJiangLi(进阶奖励)'
+	},
+	{
+		title: 'Kid(仙童)'
+	},
+	{
+		title: 'KuaFuUI(跨服)'
+	},
+	{
+		title: 'MainCityUI(主城)'
+	},
+	{
+		title: 'MarriageUi(结婚系统)'
+	},
+	{
+		title: 'MasterUi(师徒)'
+	},
+	{
+		title: 'PhotoBook(图鉴)'
+	},
+	{
+		title: 'PlayerUi(其他玩家信息)'
+	},
+	{
+		title: 'RankUI(排行榜)'
+	},
+	{
+		title: 'RebateTurnTable(幸运转盘)'
+	},
+	{
+		title: 'Reconnection(断线重连)'
+	},
+	{
+		title: 'RedBag(红包)'
+	},
+	{
+		title: 'RedDot(小红点系统)'
+	},
+	{
+		title: 'RisksUI(八荒探秘)'
+	},
+	{
+		title: 'RoleUI(角色)'
+	},
+	{
+		title: 'RunesUI(符文)'
+	},
+	{
+		title: 'SendShopUI(寄售行)'
+	},
+	{
+		title: 'StrengthUI(我要变强)'
+	},
+	{
+		title: 'TacticsUI(阵法)'
+	},
+	{
+		title: 'Verified(实名认证)'
+	},
+	{
+		title: 'VipUI(vip相关)'
+	},
+	{
+		title: 'WestExpUI(护送神女)'
+	},
+	{
+		title: 'XuanNVUI(玄女,神女)'
+	},
+	{
+		title: 'common(通用)'
+	},
+	{
+		title: 'login(登陆)'
+	},
+	{
+		title: 'mail(邮件)'
+	},
+	{
+		title: 'pet(宠物)'
+	},
+	{
+		title: 'petA(仙侣)'
+	},
+	{
+		title: 'realm(境界)'
+	},
+	{
+		title: 'shopMall(商店相关)'
+	},
+	{
+		title: 'uiHelper(通用小组件)'
+	},
+	{
+		title: 'worldMap(世界地图)'
+	},	
+]
